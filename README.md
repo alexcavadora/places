@@ -1,5 +1,3 @@
-Here’s a simple `README.md` for your project:
-
 # Beach vs. Mountain Classifier
 
 This project implements a binary classifier to distinguish between beach and mountain images using a modified ResNet50 model pre-trained on the Places365 dataset. The classifier is trained using a custom dataset and evaluated to measure its accuracy.
@@ -31,7 +29,10 @@ The model is trained on the custom `BeachMountainDataset`, located in the `datas
    ```
 
 3. Ensure that the `resnet50_places365.pth.tar` file (pre-trained Places365 weights) is in the project directory. You can download it from the [official Places365 repository](https://github.com/CSAILVision/places365).
-
+Alternatively, execute the `downloadplaces.py` file provided:
+```bash
+python downloadplaces.py
+```
 ## Training the Model
 To train the model, simply run:
 ```bash
